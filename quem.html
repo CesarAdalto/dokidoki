@@ -1,0 +1,494 @@
+<html lang="pt">
+
+<head>
+    <title>Doki Doki</title>
+    <link rel="shortcut icon" href="image/logo.jpg">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            background-image: linear-gradient(180deg, rgba(34,227,19,0.5), #ff66c7);
+        }
+
+        .navbar a{
+            color: white;
+        }
+
+        .navbar a:hover{
+            color: #a12776;
+        }
+
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-image: linear-gradient(180deg, rgba(34,227,19,0.5), #ff66c7);
+            padding: 5px;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            /* Set width to 100% */
+            margin: auto;
+            height: auto;
+        }
+
+        body {
+            background-color: white;
+            font-family: monospace;
+        }
+
+        .logoimg {
+            display: block;
+            margin-top: 3px;
+            width: 50px;
+            position: relative;
+            z-index: 999;
+            margin-left: 0;
+        }
+
+        .textinho{
+            font-size: 30px;
+
+            background: -webkit-linear-gradient( #22e313 , #ff66c7 100%);
+            background: linear-gradient(#22e313, #ff66c7 100%);
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Hide the carousel text when the screen is less than 600 pixels wide */
+        @media (max-width: 600px) {
+            .carousel-caption {
+                display: none;
+            }
+        }
+
+        .footertitle {
+            font-size: 30px;
+            color: #ff66c7;
+            margin-top: 2%;
+            float: right;
+            text-align: center;
+            position: relative;
+            width: 100%;
+            font-family: Black And White Picture;
+        }
+
+        .whatsapp {
+            color: #ff66c7;
+            margin-top: 4%;
+            float: left;
+            position: relative;
+            margin-bottom: 2%;
+            font-size: 25px;
+            font-family: Black And White Picture;
+            text-align: center;
+            width: 25%;
+        }
+
+        .whatsapp a{
+            color: #a12776;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        .whatsapp a:hover{
+            color: #97e98c;
+        }
+
+        .facebook {
+            color: #a12776;
+            margin-top: 4%;
+            float: left;
+            position: relative;
+            margin-bottom: 2%;
+            font-size: 25px;
+            font-family: Black And White Picture;
+            text-align: center;
+            width: 25%;
+        }
+
+        .facebook a {
+            color: #a12776;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        .facebook a:hover {
+            color: #97e98c;
+        }
+
+        .email {
+            color: #a12776;
+            margin-top: 4%;
+            float: left;
+            position: relative;
+            margin-bottom: 2%;
+            font-size: 25px;
+            font-family: Black And White Picture;
+            text-align: center;
+            width: 25%;
+        }
+
+        .shopee{
+            color: #a12776;
+            margin-top: 4%;
+            float: left;
+            position: relative;
+            margin-bottom: 2%;
+            font-size: 25px;
+            font-family: Black And White Picture;
+            text-align: center;
+            width: 25%;
+        }
+
+        .shopee a{
+            color: #a12776;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        .shopee a:hover{
+            color: #97e98c;
+        }
+
+        @media(max-width: 600px) {
+            .produtos {
+                width: 90%;
+                margin-left: 5%;
+                margin-bottom: 2%;
+
+            }
+
+        }
+
+        @media (max-width: 600px) {
+            footer .footertitle {
+                width: 100%;
+                font-size: 20px;
+                position: relative;
+                margin-top: 2%;
+                text-align: center;
+                margin-bottom: 2%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            footer .whatsapp {
+                width: 100%;
+                font-size: 15px;
+                position: relative;
+                margin-bottom: 1%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            footer .facebook {
+                width: 100%;
+                font-size: 15px;
+                position: relative;
+                margin-bottom: 1%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            footer .shopee {
+                width: 100%;
+                font-size: 15px;
+                position: relative;
+                margin-bottom: 1%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            footer .email {
+                width: 100%;
+                font-size: 15px;
+                position: relative;
+                margin-bottom: 1%;
+            }
+        }
+
+        
+    </style>  
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color: #FE8DA8;">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img class="logoimg" src="image/logo.jpg"/>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class=""><a href="index.html">Home</a></li>
+                    <li class=""><a href="quem.html">Produtos</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://api.whatsapp.com/send?phone=5511958560761"><span class="glyphicon glyphicon-log-in"></span> Entre em contato conosco
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-center">
+        <h3 class="textinho">Nossos produtos</h3><br>
+        <div class="row">
+
+            <div class="col-sm-4 produtos">
+               <a href="https://shopee.com.br/brinco-de-morango-i.435430842.8351242873" target="_blanck">
+                    <img src="image/produtos/morangobrinco.jpg" class="img-responsive" style="width:100%" alt="Image">
+               </a> 
+            </div>
+
+            <div class="col-sm-4 produtos">
+                <a href="https://shopee.com.br/brinco-tanjiro-(kimetsu-no-yaiba)-i.435430842.10101687502" target="_blanck">
+                    <img src="image/produtos/tanjirobrinco.jpg" class="img-responsive" style="width:100%" alt="Image">
+                </a>
+            </div>
+
+            <div class="col-sm-4 produtos">
+                <a href="https://shopee.com.br/brinco-de-cogumelo-i.435430842.8451236230" target="_blanck">
+                    <img src="image/produtos/cogumelobrinco.jpg" class="img-responsive" style="width:100%" alt="Image">
+                </a>
+
+            </div>
+        </div><br>
+
+        <div class="row">
+
+            <div class="col-sm-4 produtos">
+               <a href="https://shopee.com.br/brinco-de-adaga-i.435430842.8955012991" target="_blanck">
+                    <img src="image/produtos/adagabrinco.png" class="img-responsive" style="width:100%" alt="Image">
+               </a> 
+            </div>
+
+            <div class="col-sm-4 produtos">
+                <a href="https://shopee.com.br/brinco-vaquinha-i.435430842.3788066892" target="_blanck">
+                    <img src="image/produtos/vacabrinco.png" class="img-responsive" style="width:100%" alt="Image">
+                </a>
+            </div>
+
+            <div class="col-sm-4 produtos">
+                <a href="https://shopee.com.br/brinco-de-oniguiri-i.435430842.10101662128" target="_blanck">
+                    <img src="image/produtos/oniguiribrinco.png" class="img-responsive" style="width:100%" alt="Image">
+                </a>
+
+            </div>
+        </div><br>
+
+        <div class="row">
+
+            <div class="col-sm-4 produtos">
+               <a href="https://shopee.com.br/brinco-de-cerejinha-duplo-i.435430842.3044103350" target="_blanck">
+                    <img src="image/produtos/cerejabrinco.png" class="img-responsive" style="width:100%" alt="Image">
+               </a> 
+            </div>
+
+            <div class="col-sm-4 produtos">
+                <a href="https://shopee.com.br/brinco-de-polvo-(tentáculo)-i.435430842.8951246926" target="_blanck">
+                    <img src="image/produtos/povobrinco.png" class="img-responsive" style="width:100%" alt="Image">
+                </a>
+            </div>
+
+            <div class="col-sm-4 produtos">
+                <a href="https://shopee.com.br/brinco-de-laranja-i.435430842.9050882014" target="_blanck">
+                    <img src="image/produtos/laranjabrinco.png" class="img-responsive" style="width:100%" alt="Image">
+                </a>
+
+            </div>
+        </div><br>
+
+        <div class="row">
+
+            <div class="col-sm-4 produtos">
+               <a href="https://shopee.com.br/brinco-de-dango-i.435430842.4087981807" target="_blanck">
+                    <img src="image/produtos/dangobrinco.png" class="img-responsive" style="width:100%" alt="Image">
+               </a> 
+            </div>
+
+            <div class="col-sm-4 produtos">
+                <a href="https://shopee.com.br/brinco-bandeira-bi-i.435430842.4187992046" target="_blanck">
+                    <img src="image/produtos/bandeirabibrinco.png" class="img-responsive" style="width:100%" alt="Image">
+                </a>
+            </div>
+
+            <div class="col-sm-4 produtos">
+                <a href="https://shopee.com.br/brinco-de-panqueca-i.435430842.10601680741" target="_blanck">
+                    <img src="image/produtos/panquecabrinco.png" class="img-responsive" style="width:100%" alt="Image">
+                </a>
+
+            </div>
+        </div><br>
+
+        <div class="row">
+
+            <div class="col-sm-4 produtos">
+               <a href="https://shopee.com.br/brinco-de-ovo-i.435430842.11901670589" target="_blanck">
+                    <img src="image/produtos/ovobrinco.png" class="img-responsive" style="width:100%" alt="Image">
+               </a> 
+            </div>
+
+            <div class="col-sm-4 produtos">
+                <a href="https://shopee.com.br/brinco-de-hambúrguer-i.435430842.10001688285" target="_blanck">
+                    <img src="image/produtos/hamburguerbrinco.png" class="img-responsive" style="width:100%" alt="Image">
+                </a>
+            </div>
+
+            <div class="col-sm-4 produtos">
+                <a href="https://shopee.com.br/brinco-de-pizza-i.435430842.11001666101" target="_blanck">
+                    <img src="image/produtos/pizzabrinco.png" class="img-responsive" style="width:100%" alt="Image">
+                </a>
+
+            </div>
+        </div><br>
+
+        <div class="row">
+
+            <div class="col-sm-4 produtos">
+               <a href="https://shopee.com.br/brinco-de-patinho-i.435430842.9851227900" target="_blanck">
+                    <img src="image/produtos/patobrinco.png" class="img-responsive" style="width:100%" alt="Image">
+               </a> 
+            </div>
+
+            <div class="col-sm-4 produtos">
+                <a href="https://shopee.com.br/brinco-arco-íris-lgbt-i.435430842.9951240407" target="_blanck">
+                    <img src="image/produtos/lgbtbrinco.png" class="img-responsive" style="width:100%" alt="Image">
+                </a>
+            </div>
+
+            <div class="col-sm-4 produtos">
+                <a href="https://shopee.com.br/brinco-de-limão-i.435430842.7187985994" target="_blanck">
+                    <img src="image/produtos/limaobrinco.png" class="img-responsive" style="width:100%" alt="Image">
+                </a>
+
+            </div>
+        </div><br>
+
+        <div class="row">
+
+            <div class="col-sm-4 produtos">
+               <a href="https://shopee.com.br/brinco-coraline-i.435430842.9851219640" target="_blanck">
+                    <img src="image/produtos/coralinebrinco.png" class="img-responsive" style="width:100%" alt="Image">
+               </a> 
+            </div>
+
+            <div class="col-sm-4 produtos">
+                <a href="https://shopee.com.br/brinco-de-taco-i.435430842.7087986868" target="_blanck">
+                    <img src="image/produtos/tacobrinco.png" class="img-responsive" style="width:100%" alt="Image">
+                </a>
+            </div>
+
+            <div class="col-sm-4 produtos">
+                <a href="https://shopee.com.br/brinco-de-hot-dog-i.435430842.2952824151" target="_blanck">
+                    <img src="image/produtos/hotdogbrinco.png" class="img-responsive" style="width:100%" alt="Image">
+                </a>
+
+            </div>
+        </div><br>
+        
+        <div class="row">
+
+            <div class="col-sm-4 produtos">
+               <a href="https://shopee.com.br/brincos-de-balinha-i.435430842.9555007090" target="_blanck">
+                    <img src="image/produtos/balinhabrinco.png" class="img-responsive" style="width:100%" alt="Image">
+               </a> 
+            </div>
+
+            <div class="col-sm-4 produtos">
+                <a href="https://shopee.com.br/brinco-de-dados-i.435430842.9355013887" target="_blanck">
+                    <img src="image/produtos/dadobrinco.png" class="img-responsive" style="width:100%" alt="Image">
+                </a>
+            </div>
+
+            <div class="col-sm-4 produtos">
+                <a href="https://shopee.com.br/brinco-de-dados-i.435430842.9355013887" target="_blanck">
+                    <img src="image/produtos/melanciabrinco.png" class="img-responsive" style="width:100%" alt="Image">
+                </a>
+
+            </div>
+        </div><br>
+
+        <div class="row">
+
+            <div class="col-sm-4 produtos">
+               <a href="https://shopee.com.br/brinco-de-picolé-i.435430842.11404004642" target="_blanck">
+                    <img src="image/produtos/picolebrinco.png" class="img-responsive" style="width:100%" alt="Image">
+               </a> 
+            </div>
+
+            <div class="col-sm-4 produtos">
+                <a href="https://shopee.com.br/brinco-de-pirulito-de-coração-i.435430842.4088907404" target="_blanck">
+                    <img src="image/produtos/pirulitocoracaobrinco.png" class="img-responsive" style="width:100%" alt="Image">
+                </a>
+            </div>
+
+            <div class="col-sm-4 produtos">
+                <a href="https://shopee.com.br/brinco-de-pirulito-de-coração-i.435430842.4088907404" target="_blanck">
+                    <img src="image/produtos/pirulitobrinco.png" class="img-responsive" style="width:100%" alt="Image">
+                </a>
+
+            </div>
+        </div><br>
+
+        <div class="row">
+
+            <div class="col-sm-4 produtos">
+               <a href="https://shopee.com.br/brinco-de-chave-i.435430842.8455014649" target="_blanck">
+                    <img src="image/produtos/chavebrinco.png" class="img-responsive" style="width:100%" alt="Image">
+               </a> 
+            </div>
+        </div><br>
+
+    </div><br>
+
+    <footer class="container-fluid">
+        
+        <div class="footertitle"><b>
+            <img src="image/coracao.png" style="width: 45px; height:45px;" alt="Image">
+                Doki Doki Loja
+                </b>
+                <img src="image/coracao.png" style="width: 45px; height:45px;" alt="Image">
+            </div>
+                
+
+        <div class="whatsapp">
+            <a href="https://www.instagram.com/dokidoki.loja/"
+                target="_blanck">
+            <b><img src="image/instagram.png" style="width: 30px; height:30px;" alt="Image"> Instagram</b></a>
+
+        </div>
+
+        <div class="facebook">
+            <a href="https://www.facebook.com/dokidoki.loja"
+                target="_blanck">
+                <img src="image/facebook.png" style="width: 30px; height:30px;" alt="Image"> Doki Doki Loja</a>
+        </div>
+
+        <div class="email">
+            <b><img src="image/email.png" style="width: 30px; height:30px;" alt="Image"> lojadokidoki@gmail.com</b>
+        </div>
+
+        <div class="shopee">
+            <a href="https://shopee.com.br/dokidokiloja"
+                target="_blanck">
+                <img src="image/sacola.png" style="width: 30px; height:30px;" alt="Image"> Doki Doki Loja</a>
+        </div>
+    </footer>
+     
+</body>
+
+</html>
